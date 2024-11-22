@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace CodeWars;
 
-public class Kata
+public class ArrayDiff
 {
     /// <summary>
     /// Your goal in this kata is to implement a difference function, which subtracts one list 
@@ -13,7 +13,7 @@ public class Kata
     /// If a value is present in b, all of its occurrences must be removed from the other:
     /// Kata.ArrayDiff(new int[] {1, 2, 2, 2, 3}, new int[] {2}) => new int[] {1, 3}
     /// </summary>
-    public static int[] ArrayDiff(int[] a, int[] b)
+    public static int[] Diff(int[] a, int[] b)
     {
         var bSet = new HashSet<int>(b);
         return a.Where(x => !bSet.Contains(x)).ToArray();

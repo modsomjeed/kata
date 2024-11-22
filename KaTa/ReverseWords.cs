@@ -7,7 +7,7 @@ public class ReverseWords
     // "This is an example!" ==> "sihT si na !elpmaxe"
     // "double  spaces"      ==> "elbuod  secaps"
 
-    public static string ReverseWords(string str)
+    public static string ReverseEachWord(string str)
     {
         var words = str.Split(' ');
         for (int i = 0; i < words.Length; i++)
